@@ -1,0 +1,318 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 1%;
+    position: relative;
+}
+
+.finish {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 2rem;
+    opacity: 0%;
+}
+
+.show {
+    transition: 2s;
+    opacity: 100%;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    /* margin-bottom: 8px; */
+}
+
+.toggle {
+    height: 25px;
+    width: 130px;
+    border: 2px solid black;
+    /* background-color: #f8f8f8; */
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 100%;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.toggle p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    height: 25px;
+    width: 65px;
+    background-color: blue;
+    border-radius: 3px;
+    position: absolute;
+    translate: 65px;
+    transition: 0.2s;
+}
+
+.moved {
+    translate: 0px;
+}
+
+.display {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* background-color: pink; */
+    width: 214px;
+    height: 56px;
+    justify-content: space-between;
+}
+
+.next,
+.previous {
+    border-radius: 3px;
+    /* background-color: white; */
+    height: 30px;
+    width: 30px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next:hover,
+.previous:hover {
+    background-color: black;
+    color: white;
+}
+
+.country {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0 5px;
+    padding: 0;
+    text-align: center;
+}
+
+section {
+    height: 360px;
+    width: 210px;
+    background-color: lightgray;
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: 10px;
+}
+
+section div {
+    /* height: 30px;
+    width: 30px; */
+    background-color: lightblue;
+}
+
+.v1 {
+    grid-column: span 2;
+}
+
+.s1 {
+    grid-column: span 5;
+}
+
+/* .c1 {
+    grid-column: span 1;
+} */
+
+/* .v2 {
+    grid-column: span 1;
+}
+
+.g {
+    grid-column: span 1;
+}
+
+.s {
+    grid-column: span 1;
+}
+
+.fg {
+    grid-column: span 1;
+} */
+
+.s2 {
+    grid-column: span 2;
+}
+
+.c2 {
+    grid-column: span 2;
+}
+
+.b1 {
+    grid-row: span 3;
+}
+
+.b2 {
+    grid-row: span 4;
+}
+
+.b3 {
+    grid-row: span 5;
+}
+
+.b4 {
+    grid-row: span 6;
+}
+
+/* .s3 {
+    grid-column: span 1;
+} */
+
+/* .e {
+    grid-column: span 1;
+} */
+
+.p1 {
+    grid-row: span 3;
+}
+
+.b5 {
+    grid-row: span 2;
+}
+
+/* .p2 {
+    grid-column: span 1;
+} */
+
+.s4 {
+    grid-row: span 3;
+}
+
+.s5 {
+    grid-row: span 7;
+}
+
+.bo {
+    grid-row: span 2;
+}
+
+.ch {
+    grid-row: span 6;
+}
+
+/* .pa {
+    grid-column: span 1;
+} */
+
+.a1 {
+    grid-row: span 5;
+}
+
+.a2 {
+    grid-row: span 3;
+}
+
+/* .a3 {
+    grid-column: span 1;
+}
+
+.u {
+    grid-column: span 1;
+} */
+
+.s6 {
+    grid-column: span 2;
+}
+
+.s7 {
+    grid-column: span 3;
+}
+
+.s8 {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.ven {
+    background-color: #8198CE;
+}
+
+.col {
+    background-color: #A987BF;
+}
+
+.g {
+    background-color: #AFD077;
+}
+
+.s {
+    background-color: #F7CB64;
+}
+
+.fg {
+    background-color: #D37557;
+}
+
+.e {
+    background-color: #F7CA65;
+}
+
+.per {
+    background-color: #EE8364;
+}
+
+.bo {
+    background-color: #FEEE6B;
+}
+
+.ch {
+    background-color: #F1A35E;
+}
+
+.arg {
+    background-color: #7AB2E1;
+}
+
+.pa {
+    background-color: #DD92C0;
+}
+
+.u {
+    background-color: #8198CE;
+}
+
+.bra {
+    background-color: #80CB9E;
+}
+
+.night {
+    background-color: black;
+}
+
+.sea {
+    background-color: blue;
+}
+
+.nightsea {
+    background-color: white;
+}
+
+.guessed {
+    background-color: black;
+}
+
+.night.guessed {
+    background-color: white;
+}
