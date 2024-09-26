@@ -1,1 +1,1 @@
-# Country_clicker_game
+A game in which you click on the displayed country on the map. Can be played in night mode, where the map shows no boundaries between countries, for added difficulty. Currently only contains South America.
